@@ -17,9 +17,9 @@ public class SimpleString {
         return word.equals(temp.reverse().toString());
     }
 
-    public static String censor(String text) {
+    public static String censor(String text, String source, String target) {
 
-        return text.replaceAll("бяка", "[Вырезано цензурой]");
+        return text.replaceAll(source, target);
     }
 
     public static int subStringCount(String str, String substr) {
