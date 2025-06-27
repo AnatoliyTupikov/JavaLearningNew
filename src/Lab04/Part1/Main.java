@@ -8,8 +8,8 @@ public class Main {
         //SimpleMath.oddHundret();
         //SimpleMath.threeFive();
         //SimpleMath.isSumm();
-        //SimpleMath.isThreeInArray(3, 7, 8, 3, 4, 5, 3);
-        SimpleMath.oneOrThree(2, 4, 5, 3, 6);
+        System.out.println(SimpleMath.isThreeInArray(3, 7, 8, 3, 4, 5, 3));
+        System.out.println(SimpleMath.oneOrThree(2, 4, 5, 3, 6));
 
     }
 }

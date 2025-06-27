@@ -63,17 +63,17 @@ public class SimpleMath {
         System.out.println("array =" + dig);
     }
 
-    public static void isThreeInArray(int... digits) {
+    public static boolean isThreeInArray(int... digits) {
         if (digits.length < 2) {
             System.out.println("The array is too short. It needs the array has at least two elements");
-            return;
+            return false;
         }
-        showArray(digits);
-        System.out.println(digits[0] == 3 || digits[(digits.length - 1)] == 3);
+        //showArray(digits);
+        return digits[0] == 3 || digits[(digits.length - 1)] == 3;
     }
 
-    public static void oneOrThree(int... digits) {
-        showArray(digits);
+    public static boolean oneOrThree(int... digits) {
+        //showArray(digits);
         boolean result = false;
         for (int i : digits) {
             if (i == 3 || i == 1) {
@@ -82,7 +82,7 @@ public class SimpleMath {
             }
 
         }
-        System.out.println(result);
+        return result;
 
 
     }
