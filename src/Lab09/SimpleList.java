@@ -16,15 +16,22 @@ public class SimpleList {
         return result;
     }
 
-    private static List<Integer> fillUpMillion(List<Integer> income){
-        for (int i = 0; i <1000000; i++){
+    public static List<Integer> fillUpMillion(List<Integer> income) {
+        for (int i = 0; i < 1000000; i++) {
             income.add(ThreadLocalRandom.current().nextInt(-10, 11));
         }
         return income;
     }
-    public static ArrayList<Integer> getMillionArrayList (){
-        var res = new ArrayList<Integer>();
-        return fillUpMillion(res);
+
+    public static void listSpeedTest(List<Integer> income) {
+        var startTime = System.currentTimeMillis();
+        for (int i = 0; i < 100000; i++) {
+            income.get(ThreadLocalRandom.current().nextInt(0, income.size()));
+        }
+        var endTime = System.currentTimeMillis();
+
+        System.out.println(endTime - startTime);
+
     }
 
 }
