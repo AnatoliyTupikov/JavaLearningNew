@@ -1,0 +1,21 @@
+package Lab06.Task1;
+
+public class Customer extends Human implements CanChangeBank {
+
+    private String bankName;
+
+    public Customer(String firstName, String lastName, String bankName) {
+        super(firstName, lastName);
+        this.bankName = bankName;
+    }
+
+    @Override
+    public void print() {
+        System.out.println("Customer:" + "\n First Name: " + this.getFirstName() + "\n Last Name: " + this.getLastName() + "\n Bank Name: " + this.bankName);
+    }
+
+    @Override
+    public void changeBank(String newBankName) {
+        bankName = newBankName;
+    }
+}
