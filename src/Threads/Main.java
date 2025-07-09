@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] ars) {
 //        ExecutorService executorService = Executors.newFixedThreadPool(10);
 //
-//        for (int i = 1; i <=10; i++ ){
+//        for (int i = 1; i <= 10; i++) {
 //            executorService.submit(new Thread01Task());
 //        }
 //
@@ -24,7 +24,7 @@ public class Main {
 //
 //        Thread03Task.spawnThreads(100);
 //        System.out.println(Thread03Task.inst.getCount());
-
+//
 //        Thread04Task manager = new Thread04Task();
 //
 //        Thread t1 = manager.new NamedPrinter("Поток-1", true);
